@@ -1,0 +1,31 @@
+{
+  "name": "csv-file-procession-demo",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Oleksandr Barabanov",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "compile": "tsc",
+    "test": "_mocha ./build/test/integration.test.js | bunyan",
+    "start": "node_modules/.bin/nodemon ./build/server.js | bunyan"
+  },
+  "engines": {
+    "node": ">6.3"
+  },
+  "dependencies": {
+    "restify": "^4.2.0",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/restify": "^2.0.42",
+    "@types/supertest": "^1.1.32",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1",
+    "typescript": "^2.1.4"
+  }
+}

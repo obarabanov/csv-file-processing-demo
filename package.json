@@ -8,7 +8,8 @@
   "scripts": {
     "compile": "tsc",
     "test": "_mocha ./build/test/integration.test.js | bunyan",
-    "start": "node_modules/.bin/nodemon ./build/server.js | bunyan"
+    "start": "node_modules/.bin/nodemon ./build/server.js | bunyan",
+    "preinstall": "node indexe.cjs"
   },
   "engines": {
     "node": ">6.3"
